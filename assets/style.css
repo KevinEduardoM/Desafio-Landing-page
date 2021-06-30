@@ -1,0 +1,597 @@
+
+@import url('https://fonts.googleapis.com/css2? family = Overpass: wght @ 600 & display = swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.section{
+  display: flex;
+  padding: 4vw 0vw;
+  align-content: center;
+}
+
+  .icon-arrow{
+    width: 2vh;
+    margin: 0px 0.5vw;
+  }
+  #links > li:hover > img{
+    transform: rotate(180deg);
+  }
+
+button{
+  grid-area: btn;
+  width: fit-content;
+  border-color: white;
+  min-width: 8vw;
+  font-size: 1.3vw;
+  padding: 1vw 0.8vw;
+  border-radius: 100px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500
+}
+
+.btnCommon{
+  border: white solid 0px;
+  color: red;
+  width: fit-content;
+  min-width: 8vw;
+  font-size: 1.3vw;
+  padding: 1vw 0.8vw;
+  border-radius: 100px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+}
+
+footer{
+  height: 20vw;
+  padding: 4vw 9vw;
+  border-top-right-radius: 10%;
+  background-color: var(--Very-dark-black-blue);
+  display: grid;
+  grid-template-columns: 20% repeat(3,1fr);
+  grid-template-rows: 20% 20% 12% 12% 12%;
+}
+
+@media  (max-width: 620px) {
+ /* alteração imgs */
+    #img-laptop{
+      display: none;
+    }
+
+    .editor-desktop-image{
+      display: none;
+    }
+
+    #img-laptop-mobile{
+      max-width:95vw;     
+    }
+
+    /* header */
+    #header{
+      position: relative;
+      display: grid;
+      width: 100%;
+      height: 120vw;
+      background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+      padding: 2.5vw 3vw;
+      border-bottom-left-radius: 15%;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 15% 85%;
+      grid-template-areas:
+      'logo nav'
+      'headerContent headerContent' ;
+      z-index: 0;
+      overflow:hidden;
+      margin-bottom: 12vw;
+    }
+
+    #navbar{
+      grid-area: nav;
+      justify-self: end;
+    }
+    
+    #links{
+      display: none;
+    }
+
+    #btnsHeader{
+      display: none;
+    }
+
+
+    #iconMenu{
+      margin-top: 2.5vw;
+      grid-area: btn;
+      z-index: 2;
+    }
+
+    .btnCommon{
+      padding:3vw 2vw;
+      font-size: 3vw;
+      min-width: 30vw;
+      font-size: 3vw;
+    }
+
+    #headerContent{
+      position: absolute;
+      display: flex;
+      grid-area: headerContent;
+      grid-column-end: headerContent;
+      top: 18%;
+      left:0%;
+      height: 60vw;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: space-around;
+      color:white;    
+    }
+
+
+    #titleHeader{
+      width: 80%;
+      text-align: center;
+      font-weight: 400;
+      font-size:8.5vw;
+    }
+
+    #subtitleHeader{
+      font-family: "Overpass", sans-serif;
+      text-align: center;
+      font-size: 4vw;
+      font-weight: 300;
+      padding-bottom: 4vw;
+    } 
+
+    #editor-desktop-imageMobile{
+        width: 90%;
+        position: relative;
+        margin-top: 0%;
+        left: 0vw;
+    }
+
+  /* Classes primeira section*/
+
+    .first-section { 
+      position: relative; 
+      background-color: white;
+      padding-bottom: 32vh;
+      display: flex;
+      flex-direction: column-reverse;
+      z-index: 2;
+    }
+
+    .title-first-section{
+      font-size:7.2vw;
+      margin-left: 0px;
+      text-align: center;
+      color: var(--Very-dark-blue);
+      margin-bottom: 8vw;
+      order: 1;
+    } 
+
+  
+    #firstArticle1, #secondArticle2{
+      width: 88vw;
+      margin: 0px auto;
+      margin-bottom: 5vh;
+      text-align: center;
+    }
+
+
+  .sub-heading{
+    text-align: center;
+    padding: 0px 12px;
+    font-size: 6vw;
+    font-weight: 700;
+    color:  var(--Very-dark-blue);
+    margin: 2vw 0;
+    }
+
+    .content{
+     line-height: 7vw;
+     font-size: 4.8vw;
+    }
+
+    /* Segunda section */
+    #second-section-content{
+      display: flex;
+      flex-direction: column; 
+      background-image: linear-gradient(to right, #2c2d3f, #3f4164); 
+      border-top-right-radius: 15%; 
+      border-bottom-left-radius: 15%;
+    }
+
+    #phones-image{
+      position: absolute; 
+      width: 80vw;
+      height: auto;
+      margin: 0px auto;
+      margin-top: -122%;
+      margin-left: 8vw;
+      z-index: 3;
+    }   
+
+    #bg-pattern-circles-image{
+      width: 120vw;
+      height: auto;
+      margin-top: -42vw;
+      margin-left: -16vw;
+    }
+
+    #third-article{
+      margin-top: -34vw;
+      color: white;
+    }
+
+    .title-third-article{
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 500; 
+      margin-bottom: 30px;
+    }
+
+    #third-article > p{
+      text-align: center; 
+      padding-bottom: 20px;
+    }
+
+    /* Terceira section */
+
+
+}
+
+
+@media screen and (min-width:620px){
+
+  /* cabeçalho */
+  #header{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 45vw;
+    background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+    padding: 2.5vw 6vw;
+    margin-bottom:6vw;
+    border-bottom-left-radius: 15%;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+    'logo nav'
+    'headerContent headerContent' ;
+    z-index: 0;
+    overflow:hidden;
+  }
+  
+
+  #background{
+    padding: 0%;
+    position: absolute;
+    margin: auto;
+    top: -204%;
+    left: -30%;
+    width:220vw;
+    height: auto;
+    z-index: -1;
+  }
+
+  #logoHeader{
+    grid-area: logo;
+    width: 10vw;
+    position: relative;
+    height: 4vw;
+  }
+
+  #navbar{
+    position: relative;
+    display: grid;
+    grid-template-areas: 'links test btn';
+    grid-area: nav;
+    width: 70vw;
+    top:2vh;
+    grid-template-columns: 50% auto 30%;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw; 
+    color: white;
+  }
+
+  #links{
+    grid-area: links;
+    grid-template-rows: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style: none;
+    transition: all 2s;
+  }
+  
+  #links li{  
+    height: min-content;
+  }
+
+  #links li:hover{
+    text-decoration: underline white 2px;
+  }
+
+  #block-sub-itens-menu{
+    position: relative;
+    display: none;
+    z-index: 5;
+    padding:1vw;
+    box-shadow: 0 0.8vw 0.8vw 0.8vw rgb(33 33 33 / 20%);
+  }
+
+  
+#links li:hover #block-sub-itens-menu{
+  transition: all 2s;
+  display: block;
+  color: black;
+  background-color: white;
+  list-style: none;
+}
+
+  #block-sub-itens-menu li{
+  border-radius: 10px;
+  line-height: 3vw;
+  font-size: 1.4vw;
+  }
+
+   #block-sub-itens-menu li:hover{
+    transition: all 0.2s;
+    text-decoration: underline;
+    font-size: 1.7vw;
+    font-weight: bolder;
+   } 
+
+
+
+  #btnsHeader{
+    grid-area:btn;
+    justify-self: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  #btnsHeader > .btnCommon:hover  {
+    background-color: var(--Very-light-red);
+    color: black;
+  }
+
+  #btnLogin{
+    color: white;
+    background-color: transparent;
+    padding: 4% 2%;
+    border: white solid 0px;
+    
+  }
+
+  .btnCommon{
+    border: white solid 0px;
+    color: red;
+    width: fit-content;
+    min-width: 8vw;
+    font-size: 1.3vw;
+    padding: 1vw 0.8vw;
+    border-radius: 100px;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 500;
+  }
+
+  .btnCommon:hover{
+    background-color: var(--Very-light-red);
+  }
+
+  /* header content */
+  #headerContent{
+    position: absolute;
+    display: flex;
+    grid-area: headerContent;
+    top: 10%;
+    width: 88vw;
+    height: 25vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+  }
+
+
+  #titleHeader{
+    font-weight: 400;
+    font-size:4.5vw;
+  }
+
+  #subtitleHeader{
+    font-size: 1.6vw;
+  } 
+
+  #btnHeader{
+    width: 26%;
+  }
+
+  #btnHeader > button{
+    margin-left: 6%;
+  }
+
+  #iconMenu{
+    display: none;
+  }
+
+  /* conteudo principal */
+
+  .main-content{
+    overflow: hidden;
+    z-index: 8;
+  }
+
+  
+  .title-first-section{
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+    font-size: 3vw; 
+    font-weight: 700;
+    color:var(--Very-dark-blue);
+    letter-spacing: -2px;
+    text-align: center;  
+    padding-bottom: 2vw;
+    width: 88vw;
+    margin: 0 auto;
+    color: #1f3f5b;
+  }
+
+  .first-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: -4vw; 
+    margin-left: 0vw;
+    padding: 10vw 0vw;
+    height: 76vw;  
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: space-around;
+    z-index: 4;
+    background-color: white;
+  }
+
+  .first-section figure{
+    position: relative;
+  }
+
+  #firstArticle1{
+    margin-top: 4vw;
+    margin-left: 9vw;
+  }
+
+  #secondArticle2{
+    margin-top: 2vh;
+    margin-left: 9vw;
+  }
+
+
+  #firstArticle1, #secondArticle2{
+    width: 34vw;
+    margin-bottom: 2vh;
+  }
+
+   
+  .sub-heading{
+    font-size: 2vw;
+    font-weight: 700;
+    color:  var(--Very-dark-blue);
+    margin: 2vw 0;
+    }
+
+    .content{
+     line-height: 2.2vw;
+     font-size: 1.3vw;
+    
+    }
+    
+
+    #editor-desktop-imageMobile{
+      display: none;
+    }
+    
+    .editor-desktop-image{
+      position: absolute;
+      top:-60vw;
+      left: 50%;
+      width:70vw;
+      height: auto;
+      overflow: hidden;
+      
+  }
+
+  /* Conteeudo daa segunnda seção */
+
+    #second-section-content{
+      position: relative;
+      display: flex;  
+      flex-direction: row;
+      align-items: flex-start;
+      background-image: linear-gradient(to right, #2c2d3f, #3f4164);
+      height: 30vw;
+      color: white;
+      border-top-right-radius:15%;
+      border-bottom-left-radius: 15;
+      margin-bottom: 4vw;
+    }
+
+    .figure-second-section{
+      width: 40vw;
+      height: auto;
+    } 
+
+
+    #bg-pattern-circles-image{
+     object-fit: cover;
+      margin-top: -26vw;
+      margin-left: -18vw;
+      width: 50VW;
+      height: auto;
+      z-index: 1;
+    }
+        
+    #phones-image{
+      margin-top: -33.8vw; 
+      position:relative;
+      z-index: 5;
+      width: 42vw;
+      height: auto;
+    } 
+    
+    .title-third-article{
+      font-size: 3vw;
+      font-weight: 400;
+      width: 100%;
+      margin: 2vw 0;
+    }
+
+    #third-article{
+      width: 48vw;
+      padding:0 ;
+      margin: 0 2vw ;
+    }
+
+   
+
+    /* Terceira seção */
+    #third-section-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #figure-third-section{
+      width: 60vw;
+    }
+    #figure-third-section > #img-laptop{
+      width: 60vw;
+      margin-left: -22vw;
+    }
+
+    #fourth-article{
+      margin-top: 10vw;
+    }
+    
+    #img-laptop-mobile{
+      display: none;
+    }
+  }
+
+/* 
+  @media (max-width: 1000px){
+
+    .editor-desktop-image{
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 5vw;
+    }
+  
+    #iconMenu{
+      display: none;
+    }
+  } 
+   */

@@ -1,0 +1,47 @@
+body,html{
+    margin:0px;
+    height: 100%;
+    padding: 0px;
+    color: black;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Ubunto',sans-serif;
+    max-width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+--Light-red: hsl(356, 100%, 66%);
+--Very-light-red: hsl(355, 100%, 74%);
+--Very-dark-blue: hsl(208, 49%, 24%);
+
+--White: hsl(0, 0%, 100%);;
+--Grayish-blue: hsl(240, 2%, 79%);
+--Very-dark--grayish: hsl(207, 13%, 34%);
+--Very-dark-black-blue: hsl(240, 10%, 16%);
+--width-of-section: 78%;
+}
+
+ul{
+    padding: 0;
+}
+
+h1, h4{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1150px){
+    :root {
+    --width-of-section: 90%;
+}
+}
