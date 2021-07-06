@@ -54,6 +54,19 @@ footer{
 
 @media  (max-width: 620px) {
  /* alteração imgs */
+
+  
+  #background{
+    padding: 0%;
+    position: absolute;
+    margin: auto;
+    top: -44%;
+    left: -52%;
+    width:250vw;
+    height: auto;
+    z-index: -1;
+  }
+
     #img-laptop{
       display: none;
     }
@@ -210,8 +223,8 @@ footer{
       width: 85vw;
       height: auto;
       margin: 0px auto;
-      margin-top: -122vw; 
-       margin-left: 7.5vw; 
+      margin-top: -44vw; 
+      margin-left:-94.5vw; 
       z-index: 5;
     }   
 
@@ -222,7 +235,7 @@ footer{
       margin: 0px auto;
       margin-top: -42vw;
       z-index: 2;
-      margin-left: -9vw;
+      margin-left: -17vw;
     }
 
     #third-article{
