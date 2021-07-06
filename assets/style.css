@@ -41,13 +41,15 @@ button{
 }
 
 footer{
-  height: 20vw;
+  height: auto;
   padding: 4vw 9vw;
   border-top-right-radius: 10%;
   background-color: var(--Very-dark-black-blue);
   display: grid;
+  grid-template-areas: 'logo categoria1 categoria2 categoria3' 
+  'itens1 itens2 itens3';
   grid-template-columns: 20% repeat(3,1fr);
-  grid-template-rows: 20% 20% 12% 12% 12%;
+  grid-template-rows: 26% 20% 20% 20% 20% ;
 }
 
 @media  (max-width: 620px) {
@@ -61,8 +63,16 @@ footer{
     }
 
     #img-laptop-mobile{
-      max-width:95vw;     
+      width:95vw;     
+      margin: 0px 2.5vw;
     }
+
+    
+    #editor-desktop-imageMobile{
+      width: 90%;
+      position: relative;
+      margin: 0px 5%;
+  }
 
     /* header */
     #header{
@@ -73,11 +83,11 @@ footer{
       background-image: linear-gradient(to right, #ff8f70, #ff3d54);
       padding: 2.5vw 3vw;
       border-bottom-left-radius: 15%;
-      grid-template-columns: 80% 20%;
+      grid-template-columns: 80% 15%;
       grid-template-rows: 15% 85%;
       grid-template-areas:
       'logo nav'
-      'headerContent headerContent' ;
+      'headerContent headerContent2' ;
       z-index: 0;
       overflow:hidden;
       margin-bottom: 12vw;
@@ -114,9 +124,9 @@ footer{
       position: absolute;
       display: flex;
       grid-area: headerContent;
-      grid-column-end: headerContent;
+      grid-column-end: headerContent2;
       top: 18%;
-      left:0%;
+      left:10%;
       height: 60vw;
       flex-direction: column;
       align-items: center;
@@ -127,7 +137,7 @@ footer{
 
 
     #titleHeader{
-      width: 80%;
+      width: 100%;
       text-align: center;
       font-weight: 400;
       font-size:8.5vw;
@@ -141,12 +151,6 @@ footer{
       padding-bottom: 4vw;
     } 
 
-    #editor-desktop-imageMobile{
-        width: 90%;
-        position: relative;
-        margin-top: 0%;
-        left: 0vw;
-    }
 
   /* Classes primeira section*/
 
@@ -156,7 +160,7 @@ footer{
       padding-bottom: 32vh;
       display: flex;
       flex-direction: column-reverse;
-      z-index: 2;
+      z-index: 4;
     }
 
     .title-first-section{
@@ -169,10 +173,10 @@ footer{
     } 
 
   
-    #firstArticle1, #secondArticle2{
+    #firstArticle1, #secondArticle2, #fourth-article{
       width: 88vw;
       margin: 0px auto;
-      margin-bottom: 5vh;
+      margin-bottom: 2vh;
       text-align: center;
     }
 
@@ -189,6 +193,7 @@ footer{
     .content{
      line-height: 7vw;
      font-size: 4.8vw;
+     margin-bottom: 3vh;
     }
 
     /* Segunda section */
@@ -202,23 +207,28 @@ footer{
 
     #phones-image{
       position: absolute; 
-      width: 80vw;
+      width: 85vw;
       height: auto;
       margin: 0px auto;
-      margin-top: -122%;
-      margin-left: 8vw;
-      z-index: 3;
+      margin-top: -122vw; 
+       margin-left: 7.5vw; 
+      z-index: 5;
     }   
 
     #bg-pattern-circles-image{
-      width: 120vw;
+      position: relative;
+      width: 116vw;
       height: auto;
+      margin: 0px auto;
       margin-top: -42vw;
-      margin-left: -16vw;
+      z-index: 2;
+      margin-left: -9vw;
     }
 
     #third-article{
-      margin-top: -34vw;
+      position: relative;
+      z-index: 3;
+      margin-top: -31vw;
       color: white;
     }
 
@@ -236,8 +246,42 @@ footer{
     }
 
     /* Terceira section */
+    #third-section-content{
+      flex-direction: column;
+    }
 
+    /* Footer */
 
+    #footer{
+      height:auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .section-footer{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+
+    .section-footer > a {
+      color: var(---Grayish-blue);
+      text-align: center;
+      padding: 5% 0px;
+      font-size: 3.5vw;
+    }
+
+    .section-footer > a:hover{
+      text-decoration: underline 2px white;
+    }
+
+    .section-footer > h3{
+      padding: 0px 5vw;
+      padding-top: 10vw;
+      padding-bottom: 6vw;
+    }
 }
 
 
@@ -284,7 +328,7 @@ footer{
   #navbar{
     position: relative;
     display: grid;
-    grid-template-areas: 'links test btn';
+    grid-template-areas: 'links none btn';
     grid-area: nav;
     width: 70vw;
     top:2vh;
@@ -363,6 +407,10 @@ footer{
     padding: 4% 2%;
     border: white solid 0px;
     
+  }
+
+  #btnLogin:hover{
+    text-decoration: underline white 2px;
   }
 
   .btnCommon{
@@ -485,7 +533,7 @@ footer{
     .content{
      line-height: 2.2vw;
      font-size: 1.3vw;
-    
+     
     }
     
 
@@ -499,8 +547,6 @@ footer{
       left: 50%;
       width:70vw;
       height: auto;
-      overflow: hidden;
-      
   }
 
   /* Conteeudo daa segunnda seção */
@@ -577,6 +623,32 @@ footer{
     
     #img-laptop-mobile{
       display: none;
+    }
+
+    /* //footer */
+    .section-footer{
+      display: flex;
+      flex-direction: column;
+      align-content: flex-start;
+    }
+
+    .section-footer > a {
+      grid-column-start: iten1;
+      grid-column-end: iten2 ;
+      color:rgb(168, 161, 161);
+      font-size: 1.5vw;
+      padding: 0vw 5vw;
+      
+    }
+
+    .section-footer > a:hover{
+      text-decoration: underline 2px white;
+    }
+
+    .section-footer > h3{
+      grid-column-start: categoria1;
+      color: whitesmoke;
+      padding: 0vw 5vw;
     }
   }
 
