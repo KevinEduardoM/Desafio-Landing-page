@@ -7,7 +7,7 @@
     <title>Desafio Blogr</title>
       <link rel="stylesheet" type="text/css" href="assets/reset.css">
       <link rel="stylesheet" type="text/css" href="assets/style.css">  
-      <script src="assets/script.js"></script>
+    
 </head>
 <body>  
   <!-- //header -->
@@ -18,8 +18,23 @@
        
                    
           <nav id="navbar">
+
+            <input type="checkbox" id="check" onclick="alterarIcon(event)">
+            <label for="check"> 
+              <img id="iconMenu" src="images/icon-hamburger.svg" alt="icon menu">
+            </label>
+
+           
             <ul id="links">
-              <li>Product <img class="icon-arrow" src="images/icon-arrow-light.svg" alt="">
+              <li id='item1'>Product  
+                
+                <span class="icon-light" >
+                  <img class="icon-arrow"  src="images/icon-arrow-light.svg" alt="">
+                 </span>
+                <span class="icon-dark">
+                   <img class="icon-arrow"  src="images/icon-arrow-dark.svg" alt="">
+                </span>
+                         
                 <ul id="block-sub-itens-menu">
                   <li>Overview</li>
                   <li>Pricing</li>
@@ -28,7 +43,14 @@
                   <li>Integrations</li>
                 </ul>
               </li>
-              <li>Company <img class="icon-arrow" src="images/icon-arrow-light.svg" alt="">
+              
+              <li id="item2">Company 
+                <span class="icon-light">
+                  <img class="icon-arrow"  src="images/icon-arrow-light.svg" alt="">
+                 </span>
+                 <span class="icon-dark">
+                   <img class="icon-arrow"   src="images/icon-arrow-dark.svg" alt="">
+                </span>
                 <ul id="block-sub-itens-menu">
                   <li>Overview</li>
                   <li>Pricing</li>
@@ -37,23 +59,28 @@
                   <li>Integrations</li>
                 </ul>
               </li>
-              <li>Connect <img class="icon-arrow" src="images/icon-arrow-light.svg" alt="">
-                <ul id="block-sub-itens-menu">
-                  <li>Overview</li>
-                  <li>Pricing</li>
-                  <li>Marketplace</li>
-                  <li>Features</li>
-                  <li>Integrations</li>
-                </ul>
+              <li id="item3">Connect
+                 <span class="icon-light">
+                   <img class="icon-arrow"  src="images/icon-arrow-light.svg" alt="">
+                  </span>
+                  <span class="icon-dark">
+                    <img class="icon-arrow"  src="images/icon-arrow-dark.svg" alt="">
+                  </span>
+                  <ul id="block-sub-itens-menu">
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
               </li>
+
+              <div id="btnsHeader">
+                <button id="btnLogin">Login</button>
+                <button class="btnCommon">Sig up</button>
+              </div>
             </ul>
-
-            <div id="btnsHeader">
-              <button id="btnLogin">Login</button>
-              <button class="btnCommon">Sig up</button>
-            </div>
-
-            <img id="iconMenu" src="images/icon-hamburger.svg" alt="icon menu">
+            
           </nav>
 
           <article id="headerContent">
@@ -65,10 +92,12 @@
               <button class="btnCommon">Learn more</button>     
             </div>
           </article>
-        
+      <nav id='menu-mobile'>
+
+      </nav>  
     </header>    
  
-    <main class="main-content">
+    <main >
     
       <section class="first-section section">
          <h2 class="title-first-section  ">Designed for the future</h2>
@@ -162,5 +191,6 @@
         <!-- <article id="info-project">Projeto desenvolvido por Kevin Eduardo como desafio da FrontEndMentor</article>         -->
       </footer>
     </main>
+    <script src="assets/script.js"></script>
 </body>
 </html>

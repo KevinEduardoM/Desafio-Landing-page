@@ -12,8 +12,14 @@
     width: 2vh;
     margin: 0px 0.5vw;
   }
-  #links > li:hover > img{
+
+
+  #links > li:hover > span >img{
     transform: rotate(180deg);
+  }
+
+  #check{
+    display: none;
   }
 
 button{
@@ -101,7 +107,7 @@ footer{
       grid-template-areas:
       'logo nav'
       'headerContent headerContent2' ;
-      z-index: 0;
+      z-index: 10;
       overflow:hidden;
       margin-bottom: 12vw;
     }
@@ -115,6 +121,9 @@ footer{
       display: none;
     }
 
+    #links > li {
+      text-decoration: none;
+    }
     #btnsHeader{
       display: none;
     }
@@ -126,12 +135,76 @@ footer{
       z-index: 2;
     }
 
-    .btnCommon{
+
+
+    .btnCommon, #btnLogin{
       padding:3vw 2vw;
       font-size: 3vw;
       min-width: 30vw;
       font-size: 3vw;
+    } 
+      
+    #check:checked ~ #links {
+     display: block;
+     position:fixed;
+     background-color: #e4e4e4 ;
+     width: 80vw;
+     min-height: 60%;
+     height: auto;
+     list-style: none;
+     z-index:  10;
+     top: 8vh;
+     margin-left: -72vw;
+     padding-top: 5vw; 
+     text-align: center;
+     border-radius:20px ;   
     }
+
+    #check:checked ~ #links  #btnsHeader{
+      position: relative;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left:17.5%;
+      border-top: 1px #8a8a8a solid;
+      width: 65%;
+      color:#e94545;
+      z-index: 11;
+    }
+
+    #btnLogin{
+      margin: 2vw 0px;
+      padding: 3vw 4vw;
+      color: #e94545 ;
+      background-color: #d1d1d1;
+      border: white solid 0px;  
+    }
+
+
+    #check:checked ~ #links #block-sub-itens-menu{
+      position: relative;
+        z-index: 10;
+        list-style: none;
+        color: #ff3d54;
+     }
+
+     #links li{
+      margin: 4vw auto;
+      text-align: center;
+     }
+     
+     #links li ul{
+       display: none;
+     }
+
+     .icon-light{
+       display: none;
+     }
+
+     .icon-arrow{
+       height: 3vw;
+       width: 3vw;
+     }
 
     #headerContent{
       position: absolute;
@@ -352,12 +425,17 @@ footer{
     color: white;
   }
 
+  .icon-dark{
+    display: none;
+  }
+
   #links{
     grid-area: links;
     grid-template-rows: 10vw;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     list-style: none;
+    width: 70vw;
     transition: all 2s;
   }
   
@@ -378,13 +456,13 @@ footer{
   }
 
   
-#links li:hover #block-sub-itens-menu{
-  transition: all 2s;
-  display: block;
-  color: black;
-  background-color: white;
-  list-style: none;
-}
+    #links li:hover #block-sub-itens-menu{
+      display: block;
+      transition: all 2s;
+      color: black;
+      background-color: white;
+      list-style: none;
+    }
 
   #block-sub-itens-menu li{
   border-radius: 10px;
@@ -402,10 +480,10 @@ footer{
 
 
   #btnsHeader{
-    grid-area:btn;
     justify-self: center;
     height: 100%;
     width: 100%;
+    margin-top:-2vh;
     z-index: 2;
   }
 
@@ -482,7 +560,7 @@ footer{
 
   .main-content{
     overflow: hidden;
-    z-index: 8;
+    z-index: 0;
   }
 
   
