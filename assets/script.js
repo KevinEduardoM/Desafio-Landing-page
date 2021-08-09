@@ -27,7 +27,7 @@
       if(event.target.checked){
          iconMenu.src='../images/icon-close.svg';
       }else{
-         iconMenu.src='../images/icon-hamburger.svg';
+         iconMenu.src='/images/icon-hamburger.svg';
       }
    }
    
