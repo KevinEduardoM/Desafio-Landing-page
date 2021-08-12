@@ -35,7 +35,7 @@
       let i=0;
      do{
         if( larguraJanela<=660 ){
-            subitens[i].addEventListener('click',function (event) { 
+            subitens[i].addEventListener('focus',function (event) { 
                   let item = event.target;
                   ExibirSubItensMenu(item.id);
                   })                   
