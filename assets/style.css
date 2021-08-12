@@ -14,9 +14,6 @@
   }
 
 
-  #links > li:hover > span >img{
-    transform: rotate(180deg);
-  }
 
   #check{
     display: none;
@@ -102,7 +99,7 @@ footer{
       background-image: linear-gradient(to right, #ff8f70, #ff3d54);
       padding: 2.5vw 3vw;
       border-bottom-left-radius: 15%;
-      grid-template-columns: 80% 15%;
+      grid-template-columns: 85% 15%;
       grid-template-rows: 15% 85%;
       grid-template-areas:
       'logo nav'
@@ -152,12 +149,19 @@ footer{
      min-height: 60%;
      height: auto;
      list-style: none;
-     z-index:  10;
+     z-index:  12;
      top: 8vh;
-     margin-left: -74vw;
+     left: 11vw;
      padding-top: 5vw; 
      text-align: center;
      border-radius:20px ;   
+    }
+
+    #links > li:hover > span >img{
+      transform: rotate(180deg); 
+    }
+    #links > li:hover >ul{
+      display: block;
     }
 
     #check:checked ~ #links  #btnsHeader{
@@ -183,9 +187,9 @@ footer{
 
     #check:checked ~ #links #block-sub-itens-menu{
       position: relative;
-        z-index: 10;
-        list-style: none;
-        color: #050001;
+      z-index: 10;
+      list-style: none;
+      color: #050001;
      }
 
      #links li{
